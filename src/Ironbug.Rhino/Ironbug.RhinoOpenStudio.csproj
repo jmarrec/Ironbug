@@ -33,8 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenStudio">
-      <HintPath>..\..\..\..\..\..\..\openstudio-2.7.0\CSharp\openstudio\OpenStudio.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\lib\OpenStudio\2.7.0\OpenStudio.dll</HintPath>
     </Reference>
     <Reference Include="RhinoCommon">
       <HintPath>..\..\..\..\..\..\..\Program Files\Rhino 6\System\RhinoCommon.dll</HintPath>

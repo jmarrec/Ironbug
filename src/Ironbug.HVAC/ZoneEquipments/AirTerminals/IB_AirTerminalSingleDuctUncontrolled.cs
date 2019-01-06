@@ -1,35 +1,30 @@
 ﻿using Ironbug.HVAC.BaseClass;
 using OpenStudio;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Ironbug.HVAC
 {
-    public class IB_AirTerminalSingleDuctUncontrolled: IB_AirTerminal
+    public class IB_AirTerminalSingleDuctConstantVolumeNoReheat : IB_AirTerminal
     {
-        protected override Func<IB_ModelObject> IB_InitSelf => () => new IB_AirTerminalSingleDuctUncontrolled();
+        protected override Func<IB_ModelObject> IB_InitSelf => () => new IB_AirTerminalSingleDuctConstantVolumeNoReheat();
 
-        private static AirTerminalSingleDuctUncontrolled InitMethod(Model model) => new AirTerminalSingleDuctUncontrolled(model,model.alwaysOnDiscreteSchedule());
+        private static AirTerminalSingleDuctConstantVolumeNoReheat InitMethod(Model model) => new AirTerminalSingleDuctConstantVolumeNoReheat(model, model.alwaysOnDiscreteSchedule());
 
-        public IB_AirTerminalSingleDuctUncontrolled():base(InitMethod(new Model()))
+        public IB_AirTerminalSingleDuctConstantVolumeNoReheat() : base(InitMethod(new Model()))
         {
         }
 
         protected override ModelObject InitOpsObj(Model model)
         {
-            return base.OnInitOpsObj(InitMethod, model).to_AirTerminalSingleDuctUncontrolled().get();
+            return base.OnInitOpsObj(InitMethod, model).to_AirTerminalSingleDuctConstantVolumeNoReheat().get();
         }
-        
-        
     }
 
-    public sealed class IB_AirTerminalSingleDuctUncontrolled_DataFieldSet
-        : IB_FieldSet<IB_AirTerminalSingleDuctUncontrolled_DataFieldSet, AirTerminalSingleDuctUncontrolled>
+    public sealed class IB_AirTerminalSingleDuctConstantVolumeNoReheat_DataFieldSet
+        : IB_FieldSet<IB_AirTerminalSingleDuctConstantVolumeNoReheat_DataFieldSet, AirTerminalSingleDuctConstantVolumeNoReheat>
     {
-        private IB_AirTerminalSingleDuctUncontrolled_DataFieldSet() { }
-
+        private IB_AirTerminalSingleDuctConstantVolumeNoReheat_DataFieldSet()
+        {
+        }
     }
-
 }

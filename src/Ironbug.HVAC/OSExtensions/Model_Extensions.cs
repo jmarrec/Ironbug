@@ -10,7 +10,7 @@ namespace Ironbug.HVAC
     {
         public static bool Save(this Model model, string filePath)
         {
-            return model.save(new Path(filePath), true);
+            return model.save(OpenStudio.OpenStudioUtilitiesCore.toPath(filePath), true);
 
         }
 

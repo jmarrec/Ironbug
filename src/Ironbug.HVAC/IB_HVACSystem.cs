@@ -38,7 +38,7 @@ namespace Ironbug.HVAC
             var plantLoops = this.PlantLoops;
             var vrfs = this.VariableRefrigerantFlows;
 
-            var osmPath = new OpenStudio.Path(filepath);
+            var osmPath = OpenStudio.OpenStudioUtilitiesCore.toPath(filepath);
             //get Model from file if exists
             var model = GetOrNewModel(filepath);
             
@@ -69,7 +69,7 @@ namespace Ironbug.HVAC
             var model =  new OpenStudio.Model();
             if (File.Exists(opsModelFilePath))
             {
-                var osmPath = new OpenStudio.Path(opsModelFilePath);
+                var osmPath =  OpenStudio.OpenStudioUtilitiesCore.toPath(opsModelFilePath);
                 var optionalModel = OpenStudio.Model.load(osmPath);
 
                 if(optionalModel.is_initialized()) model = optionalModel.get();
