@@ -47,7 +47,7 @@ namespace Ironbug.HVAC
             {
                 
                 var item = (IB_ZoneHVACTerminalUnitVariableRefrigerantFlow)terminal;
-                newObj.addTerminal((ZoneHVACTerminalUnitVariableRefrigerantFlow)item.ToOS(model));
+                //newObj.addTerminal((ZoneHVACTerminalUnitVariableRefrigerantFlow)item.ToOS(model));
                 
             }
             

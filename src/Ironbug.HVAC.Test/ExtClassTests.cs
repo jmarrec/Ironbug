@@ -71,8 +71,8 @@ namespace Ironbug.HVAC.Tests
 
             string saveFile = @"..\..\..\..\doc\osmFile\empty_Added_.osm";
 
-            var sModel = OpenStudio.Model.load(new OpenStudio.Path(sFile)).get();
-            var tModel = OpenStudio.Model.load(new OpenStudio.Path(tFile)).get();
+            var sModel = OpenStudio.Model.load(OpenStudio.OpenStudioUtilitiesCore.toPath(sFile)).get();
+            var tModel = OpenStudio.Model.load(OpenStudio.OpenStudioUtilitiesCore.toPath(tFile)).get();
 
             var loops = sModel.getAirLoopHVACs();
             if (loops.Any())
@@ -100,7 +100,7 @@ namespace Ironbug.HVAC.Tests
 
             string saveFile = @"..\..\..\..\doc\osmFile\empty_Added_.osm";
 
-            var sModel = OpenStudio.Model.load(new OpenStudio.Path(sFile)).get();
+            var sModel = OpenStudio.Model.load(OpenStudio.OpenStudioUtilitiesCore.toPath(sFile)).get();
             //var tModel = OpenStudio.Model.load(new OpenStudio.Path(tFile)).get();
 
             var loops = sModel.getAirLoopHVACs();

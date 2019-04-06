@@ -27,7 +27,7 @@ namespace Ironbug.Grasshopper.Component
         {
             try
             {
-                var osmVersion = "2.5.0";
+                var osmVersion = "2.8.0";
                 Action<string> logger = (string message) => Rhino.RhinoApp.WriteLine(message);
                 Core.OpenStudio.OpenStudioHelper.LoadAssemblies(logger, osmVersion);
                 

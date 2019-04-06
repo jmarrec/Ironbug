@@ -39,7 +39,7 @@ namespace Ironbug.Grasshopper.Component
         /// <param name="DA">The DA object is used to retrieve from inputs and store in outputs.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
-            var obj = new IB_AirTerminalSingleDuctUncontrolled();
+            var obj = new IB_AirTerminalSingleDuctConstantVolumeNoReheat();
             
             
             this.SetObjParamsTo(obj);

@@ -1,19 +1,16 @@
 ﻿using Ironbug.HVAC.BaseClass;
 using OpenStudio;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Ironbug.HVAC
 {
-    public class IB_AirTerminalSingleDuctUncontrolled: IB_AirTerminal
+    public class IB_AirTerminalSingleDuctConstantVolumeNoReheat: IB_AirTerminal
     {
-        protected override Func<IB_ModelObject> IB_InitSelf => () => new IB_AirTerminalSingleDuctUncontrolled();
+        protected override Func<IB_ModelObject> IB_InitSelf => () => new IB_AirTerminalSingleDuctConstantVolumeNoReheat();
 
-        private static AirTerminalSingleDuctUncontrolled NewDefaultOpsObj(Model model) => new AirTerminalSingleDuctUncontrolled(model,model.alwaysOnDiscreteSchedule());
+        private static AirTerminalSingleDuctConstantVolumeNoReheat NewDefaultOpsObj(Model model) => new AirTerminalSingleDuctConstantVolumeNoReheat(model,model.alwaysOnDiscreteSchedule());
 
-        public IB_AirTerminalSingleDuctUncontrolled():base(NewDefaultOpsObj(new Model()))
+        public IB_AirTerminalSingleDuctConstantVolumeNoReheat():base(NewDefaultOpsObj(new Model()))
         {
         }
 
@@ -26,7 +23,7 @@ namespace Ironbug.HVAC
     }
 
     public sealed class IB_AirTerminalSingleDuctUncontrolled_FieldSet
-        : IB_FieldSet<IB_AirTerminalSingleDuctUncontrolled_FieldSet, AirTerminalSingleDuctUncontrolled>
+        : IB_FieldSet<IB_AirTerminalSingleDuctUncontrolled_FieldSet, AirTerminalSingleDuctConstantVolumeNoReheat>
     {
         private IB_AirTerminalSingleDuctUncontrolled_FieldSet() { }
 

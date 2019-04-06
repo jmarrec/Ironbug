@@ -8,9 +8,9 @@ namespace Ironbug.Core.OpenStudio
 {
     public static class OpenStudioHelper
     {
-        public static string SupportedVersion = "2.5.0";
+        public static string SupportedVersion = "2.8.0";
 
-        public static bool LoadAssemblies(Action<string> MessageLogger, string Version = "2.5.0")
+        public static bool LoadAssemblies(Action<string> MessageLogger, string Version = "2.8.0")
         {
             Assembly[] asms = AppDomain.CurrentDomain.GetAssemblies();
             var possibleOpsDll = asms.Where(_ => _.GetName().Name.ToUpper() == "OPENSTUDIO");
