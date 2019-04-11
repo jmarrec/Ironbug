@@ -19,7 +19,7 @@ namespace Ironbug.Grasshopper.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -693,6 +693,16 @@ namespace Ironbug.Grasshopper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Humidifier {
+            get {
+                object obj = ResourceManager.GetObject("Humidifier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HVAC {
             get {
                 object obj = ResourceManager.GetObject("HVAC", resourceCulture);
@@ -746,6 +756,16 @@ namespace Ironbug.Grasshopper.Properties {
         internal static System.Drawing.Bitmap importOSM {
             get {
                 object obj = ResourceManager.GetObject("importOSM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IntersectMass {
+            get {
+                object obj = ResourceManager.GetObject("IntersectMass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1106,6 +1126,36 @@ namespace Ironbug.Grasshopper.Properties {
         internal static System.Drawing.Bitmap SetPointFlowOA {
             get {
                 object obj = ResourceManager.GetObject("SetPointFlowOA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetPointHumidityAvg {
+            get {
+                object obj = ResourceManager.GetObject("SetPointHumidityAvg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetPointHumidityMax {
+            get {
+                object obj = ResourceManager.GetObject("SetPointHumidityMax", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetPointHumidityMin {
+            get {
+                object obj = ResourceManager.GetObject("SetPointHumidityMin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
