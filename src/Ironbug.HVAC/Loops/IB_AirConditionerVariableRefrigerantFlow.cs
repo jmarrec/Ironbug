@@ -45,10 +45,8 @@ namespace Ironbug.HVAC
             var allTerms = this.Terminals;
             foreach (var terminal in allTerms)
             {
-                
-                var item = (IB_ZoneHVACTerminalUnitVariableRefrigerantFlow)terminal;
-                //newObj.addTerminal((ZoneHVACTerminalUnitVariableRefrigerantFlow)item.ToOS(model));
-                
+                newObj.addTerminal((ZoneHVACTerminalUnitVariableRefrigerantFlow)terminal.ToOS(model));
+
             }
             
             return newObj;
